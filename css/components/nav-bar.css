@@ -1,0 +1,46 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 15px 45px;
+  box-sizing: border-box;
+
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+/*li를 담고 있는 용기가 ul이기 때문에 nav__list에서 flex적용*/
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  position: relative;
+  color: #2e363e; /*링크 색상 검정으로(디폴트값으로)*/
+}
+.nav__notification {
+  background-color: tomato;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 10px; /*사각형을 원으로 만들고 싶다면 width의 절반값*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  position: absolute; /*가장 가까운 relative를 가진 부모기준으로 움직임 nav__link에 position:relative를 추가해야 아이콘 기준으로 움직임*/
+  left: 20px;
+  top: -15px;
+}
+.nav__notificationdot {
+  background-color: tomato;
+  color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  position: absolute;
+  left: 31px;
+  bottom: 27px;
+}

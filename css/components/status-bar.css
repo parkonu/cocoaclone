@@ -1,7 +1,12 @@
 .status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 5px 3px;
+  background-color: white;
+  box-sizing: border-box; /*내가 패딩을 줘도 신경쓰지마 내 박스 사이즈를 늘리지 말아줘*/
 }
 .status-bar__column:first-child span {
   margin-right: 5px;
